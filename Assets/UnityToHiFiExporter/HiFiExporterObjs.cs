@@ -33,6 +33,7 @@
 //
 // ===============================================================================================
 
+#if UNITY_EDITOR // the exporter uses UnityEditor APIs, so it is left out of player builds
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -115,3 +116,4 @@ namespace HiFiExporter
 //		public List<Material> Materials;
 	}
 }
+#endif
